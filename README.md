@@ -81,7 +81,7 @@
 </h2>
 
 <p>
-<img src="./json.png" alt="JSON">
+<img src="./json.jpg" alt="JSON">
 </p>
 
 <h2>

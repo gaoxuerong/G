@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Logo" src="./logo.svg" width="100" />
+  <img alt="Logo" src="./logo.png" width="100" />
 </p>
 <h1 align="center">
   G Theme for VS Code

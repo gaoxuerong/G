@@ -2,10 +2,10 @@
     "name": "G",
     "displayName": "G",
     "description": "a cool theme for coders",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "icon": "logo.png",
     "galleryBanner": {
-        "color": "#59f2f7",
+        "color": "#c678dd",
         "theme": "dark"
     },
     "publisher": "jennygao",

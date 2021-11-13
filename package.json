@@ -1,0 +1,41 @@
+{
+    "name": "G",
+    "displayName": "G",
+    "description": "a cool theme for coders",
+    "version": "0.0.5",
+    "icon": "logo.png",
+    "galleryBanner": {
+        "color": "#59f2f7",
+        "theme": "dark"
+    },
+    "publisher": "jennygao",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gaoxuerong/G.git"
+    },
+    "keywords": ["theme","cool"],
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "author": {
+        "name": "gaoxuerong",
+        "email": "1991403547@qq.com",
+        "url": "https://github.com/gaoxuerong"
+    },
+    "bugs": {
+        "url": "https://github.com/gaoxuerong/G/issues"
+    },
+    "homepage": "https://github.com/gaoxuerong/G#readme",
+    "contributes": {
+        "themes": [
+            {
+                "label": "G",
+                "uiTheme": "vs-dark",
+                "path": "./themes/G-color-theme.json"
+            }
+        ]
+    }
+}

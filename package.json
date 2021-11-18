@@ -2,7 +2,7 @@
   "name": "G",
   "displayName": "G",
   "description": "a cool theme for coders",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "icon": "logo.png",
   "galleryBanner": {
     "color": "#c678dd",
@@ -97,7 +97,11 @@
           "default": ["https://cdn.dribbble.com/users/907810/screenshots/14995393/media/1ba59ebe98922b8c38abd444ae8acb1a.png"],
           "description": "Your custom images. 自己定制背景图"
         },
-        "background.loop": true
+        "background.loop": {
+          "type": "boolean",
+          "default": true,
+          "description": "Loop your images. 循环使用图片"
+        }
       }
     }
   }

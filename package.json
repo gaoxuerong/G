@@ -1,41 +1,104 @@
 {
-    "name": "G",
-    "displayName": "G",
-    "description": "a cool theme for coders",
-    "version": "0.0.7",
-    "icon": "logo.png",
-    "galleryBanner": {
-        "color": "#c678dd",
-        "theme": "dark"
-    },
-    "publisher": "jennygao",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/gaoxuerong/G.git"
-    },
-    "keywords": ["theme","cool"],
-    "engines": {
-        "vscode": "^1.0.0"
-    },
-    "categories": [
-        "Themes"
+  "name": "G",
+  "displayName": "G",
+  "description": "a cool theme for coders",
+  "version": "0.0.7",
+  "icon": "logo.png",
+  "galleryBanner": {
+    "color": "#c678dd",
+    "theme": "dark"
+  },
+  "publisher": "jennygao",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaoxuerong/G.git"
+  },
+  "keywords": [
+    "theme",
+    "cool"
+  ],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "author": {
+    "name": "gaoxuerong",
+    "email": "1991403547@qq.com",
+    "url": "https://github.com/gaoxuerong"
+  },
+  "bugs": {
+    "url": "https://github.com/gaoxuerong/G/issues"
+  },
+  "homepage": "https://github.com/gaoxuerong/G#readme",
+  "contributes": {
+    "themes": [
+      {
+        "label": "G",
+        "uiTheme": "vs-dark",
+        "path": "./themes/G-color-theme.json"
+      }
     ],
-    "author": {
-        "name": "gaoxuerong",
-        "email": "1991403547@qq.com",
-        "url": "https://github.com/gaoxuerong"
-    },
-    "bugs": {
-        "url": "https://github.com/gaoxuerong/G/issues"
-    },
-    "homepage": "https://github.com/gaoxuerong/G#readme",
-    "contributes": {
-        "themes": [
+    "configuration": {
+      "type": "object",
+      "title": "Plugin background config. background 插件配置",
+      "properties": {
+        "background.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Plugin background enabled.background 插件是否启用"
+        },
+        "background.useFront": {
+          "type": "boolean",
+          "default": true,
+          "description": "If use front image,which means image is placed on the top of your code. 是否使用前景图，这样会使图片放在代码的顶部"
+        },
+        "background.style": {
+          "type": "object",
+          "default": {
+            "content": "''",
+            "pointer-events": "none",
+            "position": "absolute",
+            "z-index": "99999",
+            "width": "100%",
+            "height": "100%",
+            "background-position": "100% 100%",
+            "background-repeat": "no-repeat",
+            "opacity": 1
+          },
+          "description": "Custom common style.自定义各项公有样式."
+        },
+        "background.styles": {
+          "type": "array",
+          "default": [
             {
-                "label": "G",
-                "uiTheme": "vs-dark",
-                "path": "./themes/G-color-theme.json"
+              "content": "''",
+              "pointer-events": "none",
+              "position": "absolute",
+              "z-index": "99999",
+              "width": "120%",
+              "height": "100%",
+              "background-position": "100% 100%",
+              "background-repeat": "no-repeat",
+              "background-size": "100% 100%",
+              "opacity": "0.5"
             }
-        ]
+          ],
+          "description": "Each style of backgrounds. 每一个背景图的独有样式。"
+        },
+        "background.useDefault": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use default images.使用默认图片"
+        },
+        "background.customImages": {
+          "type": "array",
+          "default": ["https://cdn.dribbble.com/users/907810/screenshots/14995393/media/1ba59ebe98922b8c38abd444ae8acb1a.png"],
+          "description": "Your custom images. 自己定制背景图"
+        },
+        "background.loop": true
+      }
     }
+  }
 }

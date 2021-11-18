@@ -2,10 +2,13 @@
   <img alt="Logo" src="./logo.png" width="100" />
 </p>
 <h1 align="center">
-  G Theme for VS Code
+  G Theme and Custom Styles for VS Code
 </h1>
 <p align="center">
-  A cool, dark theme for <a href="https://github.com/gaoxuerong/G">VS Code</a>.
+  A cool, dark theme and Custom Styles  for <a href="https://github.com/gaoxuerong/G">VS Code</a>.
+</p>
+<p align="center">
+  它是一个深色的主题，并且可以自定义背景图片
 </p>
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=jennygao.G">

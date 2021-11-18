@@ -1,9 +1,7 @@
 # Change Log
 
-All notable changes to the "G" extension will be documented in this file.
+version `0.0.11`
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+```
+init
+```

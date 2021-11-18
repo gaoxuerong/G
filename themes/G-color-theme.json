@@ -368,7 +368,7 @@
       "name": "Library type",
       "scope": "support.type",
       "settings": {
-        "foreground": "#e06c75"
+        "foreground": "#c678dd"
       }
     },
     {
@@ -411,7 +411,7 @@
         "variable.sass"
       ],
       "settings": {
-        "foreground": "#e06c75"
+        "foreground": "#5ccfe6"
       }
     },
     {

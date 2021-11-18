@@ -2,7 +2,7 @@
   "name": "G",
   "displayName": "G",
   "description": "a cool theme for coders",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "icon": "logo.png",
   "galleryBanner": {
     "color": "#c678dd",
@@ -18,11 +18,17 @@
     "cool"
   ],
   "engines": {
-    "vscode": "^1.40.0"
+    "vscode": "^1.38.0"
   },
   "categories": [
+    "Other",
     "Themes"
   ],
+  "activationEvents": [
+    "*"
+  ],
+  "license": "ISC",
+  "main": "./out/extension",
   "author": {
     "name": "gaoxuerong",
     "email": "1991403547@qq.com",
@@ -38,6 +44,18 @@
         "label": "G",
         "uiTheme": "vs-dark",
         "path": "./themes/G-color-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.background.info",
+        "title": "Background - Info"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.backgroundCover.refresh",
+        "key": "ctrl+shift+f7"
       }
     ],
     "configuration": {
@@ -72,18 +90,9 @@
         "background.styles": {
           "type": "array",
           "default": [
-            {
-              "content": "''",
-              "pointer-events": "none",
-              "position": "absolute",
-              "z-index": "99999",
-              "width": "120%",
-              "height": "100%",
-              "background-position": "100% 100%",
-              "background-repeat": "no-repeat",
-              "background-size": "100% 100%",
-              "opacity": "0.5"
-            }
+            {},
+            {},
+            {}
           ],
           "description": "Each style of backgrounds. 每一个背景图的独有样式。"
         },
@@ -94,15 +103,30 @@
         },
         "background.customImages": {
           "type": "array",
-          "default": ["https://cdn.dribbble.com/users/907810/screenshots/14995393/media/1ba59ebe98922b8c38abd444ae8acb1a.png"],
+          "default": [],
           "description": "Your custom images. 自己定制背景图"
         },
         "background.loop": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Loop your images. 循环使用图片"
         }
       }
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "vscode:uninstall": "node ./out/uninstall",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test",
+    "check": "tslint -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.7",
+    "typescript": "^4.5.2",
+    "vscode": "^1.1.37"
   }
 }

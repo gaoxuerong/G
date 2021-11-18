@@ -2,7 +2,7 @@
   "name": "G",
   "displayName": "G",
   "description": "a cool theme for coders",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "icon": "logo.png",
   "galleryBanner": {
     "color": "#c678dd",
@@ -18,7 +18,7 @@
     "cool"
   ],
   "engines": {
-    "vscode": "^1.0.0"
+    "vscode": "^1.40.0"
   },
   "categories": [
     "Themes"
